@@ -1,0 +1,139 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "heading": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-6xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-semibold",
+        "h4": "text-xl md:text-2xl font-medium",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed text-muted-foreground",
+        "caption": "text-sm text-muted-foreground"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#064E3B",
+          "foreground": "#FFFFFF",
+          "hover": "#043E2F"
+        },
+        "secondary": {
+          "DEFAULT": "#ECFDF5",
+          "foreground": "#064E3B"
+        },
+        "accent": {
+          "DEFAULT": "#C2410C",
+          "foreground": "#FFFFFF"
+        },
+        "background": "#FAFAF9",
+        "card": "#FFFFFF",
+        "text": {
+          "primary": "#0F172A",
+          "secondary": "#475569",
+          "muted": "#94A3B8"
+        },
+        "border": "#E2E8F0"
+      },
+      "gradients": {
+        "hero": "bg-gradient-to-br from-[#ECFDF5] via-[#FAFAF9] to-[#FFFFFF]",
+        "card_hover": "hover:bg-gradient-to-br hover:from-white hover:to-[#ECFDF5]/30"
+      }
+    },
+    "spacing": {
+      "container": "container mx-auto px-4 md:px-6 max-w-7xl",
+      "section_padding": "py-12 md:py-24",
+      "card_padding": "p-6 md:p-8"
+    },
+    "visual_enhancers": {
+      "radius": {
+        "card": "rounded-2xl",
+        "button": "rounded-xl",
+        "input": "rounded-lg"
+      },
+      "shadows": {
+        "card": "shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300",
+        "button": "shadow-sm hover:shadow-md"
+      },
+      "borders": {
+        "subtle": "border border-border/40",
+        "active": "border-primary/20"
+      }
+    },
+    "animation": {
+      "transition": "transition-all duration-300 ease-out",
+      "hover_lift": "hover:-translate-y-1 hover:shadow-lg",
+      "fade_in": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.4 }
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-6 rounded-xl font-medium shadow-sm transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-12 px-6 rounded-xl font-medium",
+      "outline": "border-2 border-primary/20 text-primary hover:bg-primary/5 h-12 px-6 rounded-xl font-medium",
+      "ghost": "hover:bg-accent/10 text-accent-foreground h-12 px-4 rounded-xl"
+    },
+    "cards": {
+      "base": "bg-card text-card-foreground rounded-2xl border border-border/40 shadow-sm p-6 md:p-8",
+      "interactive": "bg-card text-card-foreground rounded-2xl border border-border/40 shadow-sm p-6 md:p-8 cursor-pointer hover:border-primary/20 hover:shadow-md transition-all duration-300 group"
+    },
+    "inputs": {
+      "base": "flex h-12 w-full rounded-lg border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/20 focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50 transition-all",
+      "label": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2 block text-foreground/80"
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "hero": "Split layout: Text (Left) + Image/3D (Right). Use 'Bento Grid' for feature highlights below.",
+      "features": "Grid layout: grid-cols-1 md:grid-cols-3 gap-8. Cards with large icons and minimal text."
+    },
+    "calculators": {
+      "layout": "Two-column grid on desktop (Input Left, Result Right sticky). Single column stack on mobile.",
+      "result_card": "Sticky sidebar on desktop. High emphasis on the 'Final Amount'. Use donut charts for breakdown."
+    },
+    "dashboard": {
+      "grid": "Bento Grid: grid-cols-1 md:grid-cols-4 gap-6. 'Total Saved' (col-span-1), 'Recent Calcs' (col-span-2), 'Deadlines' (col-span-1)."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_main": "https://images.unsplash.com/photo-1544813813-2c73bec209ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxuaWdlcmlhbiUyMHByb2Zlc3Npb25hbCUyMGhhcHB5JTIwbGFwdG9wJTIwb2ZmaWNlfGVufDB8fHx8MTc3MTc1NzY1Nnww&ixlib=rb-4.1.0&q=85",
+      "auth_bg": "https://images.pexels.com/photos/30677717/pexels-photo-30677717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "texture_bg": "https://images.pexels.com/photos/8251149/pexels-photo-8251149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px. Size 20px or 24px."
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL_DEPENDENCIES: `yarn add framer-motion lucide-react clsx tailwind-merge recharts react-day-picker date-fns sonner`",
+    "THEME_SETUP: Configure `tailwind.config.js` with the provided color palette. Ensure 'primary' uses the hex codes provided.",
+    "COMPONENT_OVERRIDE: Do not use default Shadcn styles blindly. Apply `rounded-2xl` to all cards and `rounded-xl` to buttons as per guidelines.",
+    "CHARTING: Use `recharts` for the tax breakdown donut chart. Style it minimally with the brand palette.",
+    "NAIRA_SYMBOL: Always use '₦' (U+20A6). Ensure fonts support it (Manrope/Inter do).",
+    "ACCESSIBILITY: Ensure all inputs have associated labels. Use `aria-live` for calculator results updates.",
+    "TEST_IDS: Add `data-testid` to all inputs, buttons, and result displays.",
+    "NO_EMOJIS: Use Lucide icons instead of emojis.",
+    "ROUTING: Setup React Router for / (Home), /login, /register, /calculator/pit, /calculator/paye, /calculator/business, /education, /dashboard."
+  ],
+  "universal_guidelines": [
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters where appropriate (e.g., sticky nav).",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Use 'sonner' for toasts.",
+    "Components MUST use named exports."
+  ]
+}
